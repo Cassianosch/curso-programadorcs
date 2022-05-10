@@ -1,0 +1,6 @@
+Cor principal: #8B80F9
+Cor textos: #1D2043
+p: #00000099
+h3: #255983
+Fonte títulos: Playfair display
+Fonte textos: Poppins
