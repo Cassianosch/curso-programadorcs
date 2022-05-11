@@ -1,3 +1,16 @@
-* {
-    color: red;
+.color-primary {
+    color: var(--color-primary);
+}
+
+.color-secondary {
+    color: var(--color-secondary);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
 }

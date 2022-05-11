@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300&display=swap');
 
 @import './helpers/helpers.css';
 @import './helpers/colors.css';
@@ -9,3 +10,11 @@
 @import './pages/footer.css';
 
 @import './helpers/responsive.css';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
