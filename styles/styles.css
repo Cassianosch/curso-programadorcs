@@ -1,0 +1,11 @@
+
+@import './helpers/helpers.css';
+@import './helpers/colors.css';
+
+@import './pages/header.css';
+@import './pages/banner.css';
+@import './pages/services.css';
+@import './pages/contact.css';
+@import './pages/footer.css';
+
+@import './helpers/responsive.css';
