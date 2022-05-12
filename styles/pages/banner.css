@@ -1,0 +1,10 @@
+.banner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    margin-top: 5rem;
+    padding: 5rem 0;
+}
+
+.banner .right img {
+    width: 100%;
+}
