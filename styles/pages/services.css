@@ -1,0 +1,49 @@
+.services {
+    background-color: var(--color-white-background);
+}
+
+.services .services-inside {
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    margin-top: 5rem;
+    padding: 5rem 0;
+}
+
+.services .left img {
+    width: 80%;
+    margin-top: 5rem;
+    display: block;
+}
+
+.services .services-inside .my-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.services .services-inside .my-services img {
+    width: 100%;
+}
+
+.services .services-inside .my-services .single-component {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    align-items: center;
+    margin-bottom: .8rem;
+}
+
+.services .services-inside .my-services .single-component .box-image {
+    background-color: var(--color-primary);
+    padding: .5rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .services-inside .my-services .single-component .box-image img {
+    max-height: 25px;
+}
+.services .services-inside .my-services .single-component .arrow-right {
+    max-height: 15px;
+}
