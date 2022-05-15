@@ -1,0 +1,38 @@
+.item-section-left {
+    grid-area: item-section-left;
+}
+.item-section-center {
+    grid-area: item-section-center;
+}
+.item-section-right {
+    grid-area: item-section-right;
+}
+.bottom-wave {
+    grid-area: bottom-wave;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: .8fr 1fr .8fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "item-section-left item-section-center item-section-right"
+    "bottom-wave bottom-wave bottom-wave";
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+footer .center {
+    text-align: center;
+}
+
+footer .center .email {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+footer .left img {
+    width: 90%;
+}
