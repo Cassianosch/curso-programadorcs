@@ -109,7 +109,7 @@
     font-size: 1.1rem !important;
   }
 }
-@media only screen and (max-width: 4375px) {
+@media only screen and (max-width: 475px) {
   header {
     grid-template-columns: 1fr;
   }
