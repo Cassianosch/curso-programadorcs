@@ -1,0 +1,116 @@
+/* 1920
+
+1366
+
+360
+
+411
+
+1536
+
+375
+
+1440
+
+1280
+
+412
+
+980
+
+780 */
+
+/*
+1920
+1536
+1440
+1366
+1280
+980
+780
+414
+375
+360
+*/
+
+@media only screen and (max-width: 980px) {
+  .container {
+    width: 90%;
+  }
+  .title-section::before {
+    width: 20px !important;
+    left: -30px !important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .container {
+    width: 95%;
+  }
+  .title-section::before {
+    width: 10px !important;
+    left: -15px !important;
+  }
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .logo {
+    text-align: center;
+  }
+  header a {
+    margin: 5px 0;
+  }
+  .banner,
+  .services .services-inside,
+  .contact,
+  footer {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+  .banner,
+  .services .services-inside,
+  .contact {
+    padding: 0;
+  }
+  .banner .right {
+    text-align: center;
+  }
+  .banner .right img {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .contact .left #form {
+    width: 100%;
+  }
+  footer {
+    grid-template-areas:
+      "item-section-center item-section-center item-section-center"
+      "bottom-wave bottom-wave bottom-wave";
+  }
+  footer .left.item-section-left {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .title-section::before {
+    width: 5px !important;
+    left: -7px !important;
+  }
+  h1 {
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+  }
+  .services .services-inside .my-services {
+    grid-template-columns: 1fr;
+  }
+
+  .h3,
+  h3 {
+    font-size: 1.1rem !important;
+  }
+}
+@media only screen and (max-width: 4375px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+}
