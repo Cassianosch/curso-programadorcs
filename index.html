@@ -102,22 +102,22 @@
           <span class="h2 color-primary">projeto</span>
           <span class="h2 color-secondary">|</span>
         </h2>
-        <form action="" method="post" id="form">
+        <form id="form">
           <div class="box-input">
             <label for="name">Seu nome</label>
-            <input type="text" name="name" id="name">
+            <input type="text" id="js-name" required>
           </div>
           <div class="box-input">
             <label for="email">Seu email</label>
-            <input type="text" name="email" id="email">
+            <input type="text" id="js-email" required>
           </div>
           <div class="box-input">
             <label for="subject">Seu Assunto</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" id="js-subject" required>
           </div>
           <div class="box-input">
             <label for="message">Mensagem</label>
-            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            <textarea id="js-message" cols="30" rows="5" required></textarea>
           </div>
           <button type="submit" class="button button-submit">Salvar</button>
         </form>
@@ -149,6 +149,41 @@
       <img class="bottom-wave" src="./images/images-background/ic-onda.svg" alt="" />
     </footer>
   </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    let form = document.querySelector('#form');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      let name = document.querySelector('#js-name').value;
+      let email = document.querySelector('#js-email').value;
+      let subject = document.querySelector('#js-subject').value;
+      let message = document.querySelector('#js-message').value;
+      console.log(name, email, subject, message);
+
+      emailjs.init('ad1NEwL3UGY9djrc1');
+
+      const templateMail = {
+        name,
+        subject,
+        message,
+        email
+      };
+
+      emailjs.send('service_cvglwaj', 'template_zj1q63w', templateMail)
+        .then((res) => {
+          console.log('Enviado com sucesso!', res.status, res.text);
+        }, (err) => {
+          console.log('Erro no envio!', err);
+        })
+
+    })
+  </script>
 </body>
 
 </html>
+
+<!-- Nome: {{from_name}}
+Assunto: {{subject}}
+Mensagem: {{message}}
+{{reply_to}} -->
