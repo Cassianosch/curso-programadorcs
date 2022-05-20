@@ -1,43 +1,44 @@
 .contact {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-    margin-top: 5rem;
-    padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 5rem 0;
 }
 
 .contact .left h2 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .contact .left #form {
-    margin-top: 3rem;
-    width: 60%;
+  margin-top: 3rem;
+  width: 60%;
 }
 
 .contact .left #form .box-input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: .4rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4rem;
 }
 
 .contact .left #form .box-input label {
-    color: var(--color-secondary);
-    font-size: .8rem;
-    margin-bottom: 1rem;
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .contact .left #form .box-input input,
 .contact .left #form .box-input textarea {
-    border: none;
-    border-bottom: 1px solid var(--color-secondary);
+  border: none;
+  border-bottom: 1px solid var(--color-secondary);
 }
 
-.contact .left #form .button-submit {
-    float: right;
-    border: none;
+.contact .left #form .bottom-submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .contact .right img {
-    width: 80%;
+  width: 80%;
 }

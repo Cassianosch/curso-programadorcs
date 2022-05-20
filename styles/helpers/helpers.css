@@ -1,20 +1,32 @@
 .color-primary {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .color-secondary {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+.color-error {
+  color: var(--color-error);
 }
 
 .container {
-    width: 85%;
-    margin: 0 auto;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .margin-top-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .margin-top-10 {
-    margin-top: 10px;
+  margin-top: 10px;
+}
+
+.display-none-imp {
+  display: none !important;
 }

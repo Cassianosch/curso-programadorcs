@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300&display=swap");
 
+@import "./helpers/helpers.css";
+@import "./helpers/colors.css";
 
-@import './helpers/helpers.css';
-@import './helpers/colors.css';
+@import "./pages/header.css";
+@import "./pages/banner.css";
+@import "./pages/services.css";
+@import "./pages/contact.css";
+@import "./pages/footer.css";
 
-@import './pages/header.css';
-@import './pages/banner.css';
-@import './pages/services.css';
-@import './pages/contact.css';
-@import './pages/footer.css';
-
-@import './helpers/responsive.css';
+@import "./helpers/responsive.css";
 
 * {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    letter-spacing: 0;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 h1,
@@ -31,90 +30,110 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
-    margin: 0;
+  font-size: 4rem;
+  line-height: 4.5rem;
+  margin: 0;
 }
 
 .h2,
 h2 {
-    font-size: 2rem;
-    margin: 0;
-    font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .h3,
 h3 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: var(--color-text-h3);
-    font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--color-text-h3);
+  font-family: "Poppins", sans-serif;
 }
 
 h4 {
-    font-size: .98rem;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+  font-size: 0.98rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .p,
 p {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-text-p);
-    font-size: .9rem;
-    text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text-p);
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .title-section {
-    color: var(--color-primary);
-    background-color: var(--color-title-background);
-    padding: 0 20px;
-    font-size: .9rem;
-    position: relative;
+  color: var(--color-primary);
+  background-color: var(--color-title-background);
+  padding: 0 20px;
+  font-size: 0.9rem;
+  position: relative;
 }
 
 .title-section::before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 1px;
-    background-color: black;
-    left: -55px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: black;
+  left: -55px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: white;
-    text-decoration: none;
-    font-size: .8rem;
-    padding: 8px 30px 8px 12px;
-    border-radius: 4px;
-    font-weight: 600;
-    position: relative;
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 8px 30px 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  position: relative;
+  border: none;
 }
 .button::after {
-    content: '';
-    position: absolute;
-    background-image: url("data:image/svg+xml,<svg width='559' height='395' viewBox='0 0 559 395' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M376.212 7.14557C372.634 2.85647 367.419 0.270575 361.841 0.0205746C356.263 -0.233335 350.833 1.87217 346.884 5.82137C342.939 9.77057 340.829 15.1964 341.083 20.7744C341.337 26.3564 343.923 31.5714 348.212 35.1454L491.072 178.165H18.882C12.0187 178.533 5.827 182.404 2.499 188.415C-0.833 194.423 -0.833 201.724 2.499 207.735C5.8271 213.747 12.0185 217.618 18.882 217.981H491.072L347.992 360.841C344.39 364.615 342.383 369.627 342.383 374.841C342.383 380.056 344.39 385.071 347.992 388.841C351.703 392.564 356.738 394.654 361.992 394.654C367.246 394.654 372.285 392.564 375.992 388.841L552.952 211.881V211.885C556.757 208.221 558.909 203.166 558.909 197.885C558.909 192.6 556.757 187.545 552.952 183.885L376.212 7.14557Z' fill='white'/></svg>");
-    width: 13px;
-    height: 9px;
-    background-size: .8rem;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    transition: .3s all ease-in-out;
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,<svg width='559' height='395' viewBox='0 0 559 395' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M376.212 7.14557C372.634 2.85647 367.419 0.270575 361.841 0.0205746C356.263 -0.233335 350.833 1.87217 346.884 5.82137C342.939 9.77057 340.829 15.1964 341.083 20.7744C341.337 26.3564 343.923 31.5714 348.212 35.1454L491.072 178.165H18.882C12.0187 178.533 5.827 182.404 2.499 188.415C-0.833 194.423 -0.833 201.724 2.499 207.735C5.8271 213.747 12.0185 217.618 18.882 217.981H491.072L347.992 360.841C344.39 364.615 342.383 369.627 342.383 374.841C342.383 380.056 344.39 385.071 347.992 388.841C351.703 392.564 356.738 394.654 361.992 394.654C367.246 394.654 372.285 392.564 375.992 388.841L552.952 211.881V211.885C556.757 208.221 558.909 203.166 558.909 197.885C558.909 192.6 556.757 187.545 552.952 183.885L376.212 7.14557Z' fill='white'/></svg>");
+  width: 13px;
+  height: 9px;
+  background-size: 0.8rem;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s all ease-in-out;
 }
 
 .button:hover::after {
-    right: 5px;
+  right: 5px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--color-primary);
+  border-radius: 100%;
+  border-top-color: white;
+  border-bottom-color: white;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
