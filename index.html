@@ -119,7 +119,11 @@
             <label for="message">Mensagem</label>
             <textarea id="js-message" cols="30" rows="5" required></textarea>
           </div>
-          <button type="submit" class="button button-submit">Salvar</button>
+          <div>
+            <h3>Enviado com sucesso!</h3>
+            <div class="loader"></div>
+            <button type="submit" class="button button-submit">Salvar</button>
+          </div>
         </form>
       </section>
       <section class="right">
@@ -151,39 +155,7 @@
   </div>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script>
-    let form = document.querySelector('#form');
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      let name = document.querySelector('#js-name').value;
-      let email = document.querySelector('#js-email').value;
-      let subject = document.querySelector('#js-subject').value;
-      let message = document.querySelector('#js-message').value;
-      console.log(name, email, subject, message);
-
-      emailjs.init('ad1NEwL3UGY9djrc1');
-
-      const templateMail = {
-        name,
-        subject,
-        message,
-        email
-      };
-
-      emailjs.send('service_cvglwaj', 'template_zj1q63w', templateMail)
-        .then((res) => {
-          console.log('Enviado com sucesso!', res.status, res.text);
-        }, (err) => {
-          console.log('Erro no envio!', err);
-        })
-
-    })
-  </script>
+  <script type="text/javascript" src="./script/script.js"></script>
 </body>
 
 </html>
-
-<!-- Nome: {{from_name}}
-Assunto: {{subject}}
-Mensagem: {{message}}
-{{reply_to}} -->
